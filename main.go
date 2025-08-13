@@ -1,0 +1,3 @@
+package goget
+
+func main() {}
