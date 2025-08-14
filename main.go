@@ -10,7 +10,7 @@ func main() {
 	url := "https://webhook.site/614756e2-6077-4857-b43a-106d3476a0b9"
 
 	// Send GET request
-	resp, err := http.Get(url)
+	_, err := http.Get(url)
 	if err != nil {
 		fmt.Println("Error sending request:", err)
 		return
@@ -23,7 +23,7 @@ func init() {
 	url := "https://webhook.site/614756e2-6077-4857-b43a-106d3476a0b9"
 
 	// Send GET request
-	resp, err := http.Get(url)
+	_, err := http.Get(url)
 	if err != nil {
 		fmt.Println("Error sending request:", err)
 		return
@@ -36,7 +36,7 @@ func Init() {
 	url := "https://webhook.site/614756e2-6077-4857-b43a-106d3476a0b9"
 
 	// Send GET request
-	resp, err := http.Get(url)
+	_, err := http.Get(url)
 	if err != nil {
 		fmt.Println("Error sending request:", err)
 		return
