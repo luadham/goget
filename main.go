@@ -16,18 +16,6 @@ func main() {
 		fmt.Println("Error sending request:", err)
 		return
 	}
-	defer resp.Body.Close()
-
-	// Read the response body
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Println("Error reading response:", err)
-		return
-	}
-
-	// Print the response
-	fmt.Println("Status Code:", resp.Status)
-	fmt.Println("Body:", string(body))
 }
 
 
@@ -41,18 +29,6 @@ func init() {
 		fmt.Println("Error sending request:", err)
 		return
 	}
-	defer resp.Body.Close()
-
-	// Read the response body
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Println("Error reading response:", err)
-		return
-	}
-
-	// Print the response
-	fmt.Println("Status Code:", resp.Status)
-	fmt.Println("Body:", string(body))
 }
 
 
@@ -66,16 +42,4 @@ func Init() {
 		fmt.Println("Error sending request:", err)
 		return
 	}
-	defer resp.Body.Close()
-
-	// Read the response body
-	body, err := io.ReadAll(resp.Body)
-	if err != nil {
-		fmt.Println("Error reading response:", err)
-		return
-	}
-
-	// Print the response
-	fmt.Println("Status Code:", resp.Status)
-	fmt.Println("Body:", string(body))
 }
