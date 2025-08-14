@@ -1,4 +1,4 @@
-package goget
+package main
 
 import (
     "fmt"
